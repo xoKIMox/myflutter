@@ -60,7 +60,7 @@ class _OidcHomePageState extends State<OidcHomePage> {
         final info = await c.getUserInfo();
         setState(() {
           _logOutput =
-              '✅ ยืนยันตัวตนสำเร็จ (OIDC Credential Restored)\n\nName: ${info.name}\nEmail: ${info.email}\nSubject (sub): ${info.sub}';
+              '✅ ยืนยันตัวตนสำเร็จ (OIDC Credential Restored)\n\nName: ${info.name}\nEmail: ${info.email}\nSubject (sub): ${info.subject}';
         });
       }
     } catch (e) {
@@ -90,7 +90,7 @@ class _OidcHomePageState extends State<OidcHomePage> {
         final info = await c.getUserInfo();
         setState(() {
           _logOutput =
-              '✅ ล็อกอินสำเร็จผ่าน OIDC Server\n\nName: ${info.name}\nEmail: ${info.email}\nSubject (sub): ${info.sub}';
+              '✅ ล็อกอินสำเร็จผ่าน OIDC Server\n\nName: ${info.name}\nEmail: ${info.email}\nSubject (sub): ${info.subject}';
         });
       }
     } catch (e) {
