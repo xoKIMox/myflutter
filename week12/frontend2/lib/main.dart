@@ -32,7 +32,7 @@ class OidcHomePage extends StatefulWidget {
 
 class _OidcHomePageState extends State<OidcHomePage> {
   final TextEditingController _issuerUrlController =
-      TextEditingController(text: 'http://localhost:8000');
+      TextEditingController(text: 'http://localhost:8001');
   final TextEditingController _clientIdController =
       TextEditingController(text: 'flutter-web-app');
 
